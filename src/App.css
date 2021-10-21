@@ -1,38 +1,210 @@
-.App {
+/* Main Styles */
+
+body {
+  background-color: #f0edf6;
+  color: black;
   text-align: center;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  width:  200px;
+  height: 200px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  box-shadow: -6px 8px 5px grey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-family: 'Allan', cursive;
+  font-size: 45px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+h3 {
+  font-family: 'Acme', sans-serif;
+}
+
+h4 {
+  font-family: 'Acme', sans-serif;
+}
+
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.back-to-list {
+  margin-top: 50px;
+}
+
+.card {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.item-img {
+  margin-top: 20px;
+}
+
+/* Button Styles */
+
+a {
+  display: inline-block;
+  background-color: #cbe8ba; 
+  color: black; 
+  border: 1px solid rgb(41, 41, 41);
+  border-radius: 8px;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Acme', sans-serif;
+}
+
+a:hover {
+  background-color: white;
+  border: 1px solid #78c94a;
+  color: black;
+  text-decoration: none;
+}
+
+.buttonOneItem {
+  position: relative;
+  margin-top: 50px;
+  border: 2px dotted #691969;
+  background-color: white;
+  color: black;
+  padding: 5px 22px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Acme', sans-serif;
+}
+
+.buttonOneItem:hover {
+  background-color: #691969;
   color: white;
+  text-decoration: none;
+  border: 2px dotted #691969;;
 }
 
-.App-link {
-  color: #61dafb;
+.buttononform {
+  left: 50%;
+  border: 2px dotted #691969;;
+  background-color: white;
+  color: black;
+  padding: 5px 22px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Acme', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttononform:hover {
+  background-color: #691969;;
+  color: white;
+  text-decoration: none;
+  border: 2px dotted #691969;;
+}
+
+.back-to-warehouses {
+  background-color:white;
+  border: 2px dotted #691969;;
+  color: black;
+  margin-right: 25px;
+}
+
+.back-to-warehouses:hover {
+  background-color: #691969;;
+  color: white;
+  text-decoration: none;
+  border: 2px dotted #691969;
+}
+
+.addItem {
+  background-color:white;
+  border: 2px dotted #00a4d3;
+  color: black;
+}
+
+.addItem:hover {
+  background-color: #00a4d3;
+  color: white;
+  text-decoration: none;
+  border: 2px dotted #00a4d3;
+}
+
+.deleteButton {
+  background-color:white;
+  border: 2px dotted rgb(199, 7, 7);
+  color: black;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Acme', sans-serif;
+}
+
+.deleteButton:hover {
+  background-color: rgb(199, 7, 7);
+  color: white;
+  text-decoration: none;
+  border: 2px dotted rgb(199, 7, 7);
+}
+
+.site-nav {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+/* Form Styles */
+
+.form-title {
+  font-size: 35px;
+}
+
+.form-button {
+  margin-top: 20px;
+}
+
+.form-group {
+  text-align: left;
+  max-width: 50%;
+  display: inline-block;
+  margin-top: 25px;
+}
+
+.formbtn {
+  margin-top: 30px;
 }
