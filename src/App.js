@@ -1,12 +1,12 @@
-import logo from './logo.svg';
-import React from 'react';
+import React, { useState } from "react";
 import './App.css';
 import Warehouses from './components/Warehouses'
 
-function App() {
+const App = () => {
+
   return (
     <div className="App">
-      <Warehouses></Warehouses>
+      <Warehouses />
     </div>
   );
 }
